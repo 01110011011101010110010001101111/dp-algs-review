@@ -1,6 +1,12 @@
 def longest_common_substring(str1: str, str2: str) -> str:
     """
     LCS!
+
+    We essentially create a table. 
+
+    At the end is the maximum common substring for the substring at the row and the whole word in the row.
+    
+    If there's a match, we can add one to the i-1, j-1 (the previous subproblem). Otherwise, we propagate it.
     """
 
     # constants
